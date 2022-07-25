@@ -1,4 +1,3 @@
-<!-- Main Content Section Starts -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Main Content Section Starts -->
     <?php include('../admin/partials/menu.php') ?>
 
     <div class="main-content">
@@ -18,6 +18,12 @@
             <h1>Manage Admin</h1>
 
             <br><br>
+
+            <?php
+            if (isset($_SESSION['add'])) {
+                echo $_SESSION['add'];
+            }
+            ?>
 
             <!-- Button -->
 
